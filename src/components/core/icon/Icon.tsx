@@ -1,10 +1,13 @@
+/* eslint-disable eslint-comments/disable-enable-pair */
+/* eslint-disable import/no-unused-modules */
 import React, { forwardRef } from "react"
+
+import Logo from "@assets/icons/logo.svg"
 
 import { StyledIcon } from "./icon.styled"
 
 const icons = {
-  // Add your icons here
-  // iconName: IconComponent
+  logo: Logo,
 }
 
 export type IconName = keyof typeof icons
