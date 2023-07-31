@@ -6,5 +6,11 @@
     "aboutMe": "About Me",
     "skills": "Skills",
     "contact": "Contact"
+  },
+  "hero": {
+    "title": "Nice to meet You!",
+    "subtitle": "Front-End Developer",
+    "downloadResume": "Download Resume",
+    "letsTalk": "Let's Talk"
   }
 }
