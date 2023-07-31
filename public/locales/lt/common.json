@@ -6,5 +6,11 @@
     "aboutMe": "Apie mane",
     "skills": "Įgūdžiai",
     "contact": "Kontaktai"
+  },
+  "hero": {
+    "title": "Malonu susipažinti!",
+    "subtitle": "Front-end programuotojas",
+    "downloadResume": "Atsisiųsti CV",
+    "letsTalk": "Susisiekime"
   }
 }

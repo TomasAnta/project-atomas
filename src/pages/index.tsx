@@ -9,7 +9,7 @@ import { Locales } from "@typings/globalTypes"
 const Home: NextPage = () => (
   <>
     <Head>
-      <title>Atomas</title>
+      <title>Front-End Developer | Atomas</title>
       <meta name="description" content="Boilerplate" />
     </Head>
     <Page>
