@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useTranslation } from "next-i18next"
 
+import { Main } from "../page.styled"
 import { Icon } from "@components/core/icon/Icon"
 import Label from "@components/core/label/Label"
 
@@ -10,11 +11,11 @@ import {
   Box,
   ContactMe,
   Download,
-  HomeContainer,
+  HeroContainer,
   LinkBox,
   Name,
   Position,
-} from "./homePage.styled"
+} from "./hero.styled"
 
 const RESUME_PATH = "/resume.pdf"
 const LINKEDIN_URL = "https://www.linkedin.com/in/antanaitis-tomas"
@@ -68,16 +69,18 @@ const DownloadAndContactBox = ({ t }: { t: TFunction }) => (
   </Box>
 )
 
-const HomePage = () => {
+const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <HomeContainer>
-      <HeroBox t={t} />
-      <ProfileImage />
-      <DownloadAndContactBox t={t} />
-    </HomeContainer>
+    <Main>
+      <HeroContainer>
+        <HeroBox t={t} />
+        <ProfileImage />
+        <DownloadAndContactBox t={t} />
+      </HeroContainer>
+    </Main>
   )
 }
 
-export default HomePage
+export default Hero

@@ -1,10 +1,9 @@
 import styled from "styled-components"
 
-export const HomeContainer = styled.div`
+export const HeroContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2.4rem 8.75rem 0 8.75rem;
   align-items: center;
 `
 
