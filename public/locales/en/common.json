@@ -12,5 +12,11 @@
     "subtitle": "Front-End Developer",
     "downloadResume": "Download Resume",
     "letsTalk": "Let's Talk"
+  },
+
+  "skills": {
+    "label": "Skills · Experiences",
+    "heading": "Technologies and skills",
+    "paragraphOne": "Technologies i use daily."
   }
 }

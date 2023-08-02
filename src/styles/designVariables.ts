@@ -27,7 +27,7 @@ export const fontSizes = {
   sm: "0.875rem", // 14px
   default: "1rem", // 16px
   lg: "1.125rem", // 18px
-  bg: "1.25rem", // 20px
+  bg: "1.5rem", // 24px
   h1: "4rem", // 64px
   h2: "3rem", // 48px
   h3: "1.25rem", // 20px
