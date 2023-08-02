@@ -1,9 +1,8 @@
 import styled from "styled-components"
 
 export const HeroContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 `
 
@@ -34,9 +33,11 @@ export const ContactMe = styled.div`
   display: flex;
   align-items: center;
   border-radius: 1rem;
+  max-width: fit-content;
   border: 1px solid ${({ theme }) => theme.colors.primary.textHover};
   color: ${({ theme }) => theme.colors.primary.textHover};
   padding: 0.6rem 1.25rem;
+  margin-left: auto;
   gap: 0.5rem;
   cursor: pointer;
 `

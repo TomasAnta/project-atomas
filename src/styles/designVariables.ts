@@ -2,7 +2,7 @@ export const colors = {
   primary: {
     background: "#090E16",
     secondaryBackground: "#14142A",
-    textPrimay: "#fff",
+    textPrimary: "#fff",
     textSecondary: "#85868A",
     textHover: "#7B4AE2",
     border: "#000",
@@ -28,8 +28,8 @@ export const fontSizes = {
   default: "1rem", // 16px
   lg: "1.125rem", // 18px
   bg: "1.25rem", // 20px
-  h1: "2rem", // 32px
-  h2: "1.5rem", // 24px
+  h1: "4rem", // 64px
+  h2: "3rem", // 48px
   h3: "1.25rem", // 20px
   h4: "1.125rem", // 18px
 }

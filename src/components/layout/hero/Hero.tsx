@@ -3,7 +3,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { useTranslation } from "next-i18next"
 
-import { Main } from "../page.styled"
 import { Icon } from "@components/core/icon/Icon"
 import Label from "@components/core/label/Label"
 
@@ -16,6 +15,7 @@ import {
   Name,
   Position,
 } from "./hero.styled"
+import { Main } from "../page.styled"
 
 const RESUME_PATH = "/resume.pdf"
 const LINKEDIN_URL = "https://www.linkedin.com/in/antanaitis-tomas"
