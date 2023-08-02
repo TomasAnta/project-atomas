@@ -1,9 +1,10 @@
 import React from "react"
 
+import { Tooltip } from "@mui/material"
 import { useTranslation } from "next-i18next"
 
 import Heading from "@components/core/heading/Heading"
-import { Icon } from "@components/core/icon/Icon"
+import { Icon, IconName } from "@components/core/icon/Icon"
 import Label from "@components/core/label/Label"
 import Paragraph from "@components/core/paragraph/Paragraph"
 
@@ -13,6 +14,17 @@ import { Main } from "../page.styled"
 const Skills = () => {
   const { t } = useTranslation()
 
+  const iconNames: IconName[] = [
+    "html",
+    "css",
+    "javaScript",
+    "react",
+    "next",
+    "typeScript",
+    "git",
+    "figma",
+  ]
+
   return (
     <Main>
       <SkillsContainer>
@@ -20,14 +32,11 @@ const Skills = () => {
         <Heading>{t("skills.heading")}</Heading>
         <Paragraph>{t("skills.paragraphOne")}</Paragraph>
         <Icons>
-          <Icon iconName="html" />
-          <Icon iconName="css" />
-          <Icon iconName="javaScript" />
-          <Icon iconName="reactIcon" />
-          <Icon iconName="nextIcon" />
-          <Icon iconName="typeScript" />
-          <Icon iconName="git" />
-          <Icon iconName="figma" />
+          {iconNames.map((iconName, index) => (
+            <Tooltip key={iconName} title={iconName}>
+              <Icon key={index} iconName={iconName} />
+            </Tooltip>
+          ))}
         </Icons>
       </SkillsContainer>
     </Main>
