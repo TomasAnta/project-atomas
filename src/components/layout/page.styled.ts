@@ -8,4 +8,8 @@ export const PageContainer = styled.div`
 
 export const Main = styled.div`
   margin: 2.4rem 8.75rem 0 8.75rem;
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    margin: 0 1.5rem;
+  }
 `
