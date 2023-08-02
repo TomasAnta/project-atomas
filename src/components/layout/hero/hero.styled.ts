@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const HeroContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   @media ${({ theme }) => theme.media.maxSmallDesktop} {
     flex-wrap: wrap;
@@ -33,10 +33,11 @@ export const DownloadBox = styled.div`
   @media ${({ theme }) => theme.media.maxSmallDesktop} {
     order: 3;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 2rem;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
   }
 `
 
@@ -48,6 +49,7 @@ export const HeroContentBox = styled.div`
     order: 2;
     width: 100%;
     align-items: center;
+    text-align: center;
   }
 `
 
