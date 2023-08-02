@@ -13,6 +13,10 @@ export const NavContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.primary.secondaryBackground};
   border-radius: 1rem;
   padding: 12px 24px;
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    margin: 2.4rem 1rem;
+  }
 `
 
 export const NavLinks = styled.div`

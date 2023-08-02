@@ -1,14 +1,54 @@
 import styled from "styled-components"
 
 export const HeroContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    flex-wrap: wrap;
+    justify-items: center;
+  }
 `
 
-export const Box = styled.div`
+export const ImageBox = styled.div`
+  img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+`
+
+export const DownloadBox = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    order: 3;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+`
+
+export const HeroContentBox = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    order: 2;
+    width: 100%;
+    align-items: center;
+  }
 `
 
 export const Name = styled.h2`
