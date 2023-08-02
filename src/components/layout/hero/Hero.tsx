@@ -7,10 +7,12 @@ import { Icon } from "@components/core/icon/Icon"
 import Label from "@components/core/label/Label"
 
 import {
-  Box,
   ContactMe,
   Download,
+  DownloadBox,
   HeroContainer,
+  HeroContentBox,
+  ImageBox,
   LinkBox,
   Name,
   Position,
@@ -26,11 +28,9 @@ const PROFILE_IMAGE_DIMENSIONS = { width: 500, height: 500 }
 const PHONE_NUMBER = "+370 698 21 381"
 
 const HeroBox = ({ t }: { t: TFunction }) => (
-  <Box>
+  <HeroContentBox>
     <Label>👋 {t("hero.title")}</Label>
-    <Name>
-      Tomas <br /> Antanaitis
-    </Name>
+    <Name>Tomas Antanaitis</Name>
     <Position>{t("hero.subtitle")}</Position>
     <LinkBox>
       <a href={LINKEDIN_URL} target="_blank">
@@ -40,22 +40,22 @@ const HeroBox = ({ t }: { t: TFunction }) => (
         <Icon iconName="gitHub" />
       </a>
     </LinkBox>
-  </Box>
+  </HeroContentBox>
 )
 
 const ProfileImage = () => (
-  <Box>
+  <ImageBox>
     <Image
       priority
       src={PROFILE_IMAGE_PATH}
       alt="Illustration of the author"
       {...PROFILE_IMAGE_DIMENSIONS}
     />
-  </Box>
+  </ImageBox>
 )
 
 const DownloadAndContactBox = ({ t }: { t: TFunction }) => (
-  <Box>
+  <DownloadBox>
     <a href={RESUME_PATH} download>
       <Download>
         {t("hero.downloadResume")} <Icon iconName="arrowDown" />
@@ -66,7 +66,7 @@ const DownloadAndContactBox = ({ t }: { t: TFunction }) => (
         <Icon iconName="phone" /> {t("hero.letsTalk")}
       </ContactMe>
     </Link>
-  </Box>
+  </DownloadBox>
 )
 
 const Hero = () => {

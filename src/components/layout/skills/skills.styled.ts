@@ -11,4 +11,9 @@ export const Icons = styled.div`
   flex-direction: row;
   gap: 2rem;
   margin: 2.55rem 0 4rem 0;
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `
