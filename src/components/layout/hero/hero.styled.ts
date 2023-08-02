@@ -14,6 +14,7 @@ export const Box = styled.div`
 export const Name = styled.h2`
   font-size: 3.25rem;
   font-style: normal;
+  color: ${({ theme }) => theme.colors.primary.textPrimary};
   font-weight: ${({ theme }) => theme.fontWeights.extrabold};
   margin: 1.75rem 0;
   line-height: normal;
@@ -50,4 +51,7 @@ export const LinkBox = styled.div`
   cursor: pointer;
 `
 
-export const Position = styled.p``
+export const Position = styled.p`
+  color: ${({ theme }) => theme.colors.primary.textSecondary};
+  margin: 0;
+`

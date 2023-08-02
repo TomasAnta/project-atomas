@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const StyledHeading = styled.h2`
+export const StyledParagraph = styled.h2`
   color: ${({ theme }) => theme.colors.primary.textPrimary};
   text-align: center;
   font-size: ${({ theme }) => theme.fontSizes.h2};
