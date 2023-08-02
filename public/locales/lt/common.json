@@ -12,5 +12,10 @@
     "subtitle": "Front-end programuotojas",
     "downloadResume": "Atsisiųsti CV",
     "letsTalk": "Susisiekime"
+  },
+  "skills": {
+    "label": "Įgūdžiai · Patirtis",
+    "heading": "Technologijos ir įgūdžiai",
+    "paragraphOne": "Technologijos kurias naudoju kasdien."
   }
 }

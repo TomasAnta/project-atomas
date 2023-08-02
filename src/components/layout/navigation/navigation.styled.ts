@@ -9,6 +9,7 @@ export const NavContainer = styled.div`
   height: 4rem;
   margin: 2.4rem 8.75rem 0 8.75rem;
   flex-shrink: 0;
+  color: ${({ theme }) => theme.colors.primary.textPrimary};
   background-color: ${({ theme }) => theme.colors.primary.secondaryBackground};
   border-radius: 1rem;
   padding: 12px 24px;

@@ -10,11 +10,12 @@ import {
   Box,
   ContactMe,
   Download,
-  HomeContainer,
+  HeroContainer,
   LinkBox,
   Name,
   Position,
-} from "./homePage.styled"
+} from "./hero.styled"
+import { Main } from "../page.styled"
 
 const RESUME_PATH = "/resume.pdf"
 const LINKEDIN_URL = "https://www.linkedin.com/in/antanaitis-tomas"
@@ -68,16 +69,18 @@ const DownloadAndContactBox = ({ t }: { t: TFunction }) => (
   </Box>
 )
 
-const HomePage = () => {
+const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <HomeContainer>
-      <HeroBox t={t} />
-      <ProfileImage />
-      <DownloadAndContactBox t={t} />
-    </HomeContainer>
+    <Main>
+      <HeroContainer>
+        <HeroBox t={t} />
+        <ProfileImage />
+        <DownloadAndContactBox t={t} />
+      </HeroContainer>
+    </Main>
   )
 }
 
-export default HomePage
+export default Hero

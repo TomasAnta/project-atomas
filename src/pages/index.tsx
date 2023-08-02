@@ -2,8 +2,9 @@ import { NextPage } from "next"
 import Head from "next/head"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
-import HomePage from "@components/layout/homePage/HomePage"
+import Hero from "@components/layout/hero/Hero"
 import { Page } from "@components/layout/Page"
+import Skills from "@components/layout/skills/Skills"
 import { Locales } from "@typings/globalTypes"
 
 const Home: NextPage = () => (
@@ -13,7 +14,8 @@ const Home: NextPage = () => (
       <meta name="description" content="Boilerplate" />
     </Head>
     <Page>
-      <HomePage />
+      <Hero />
+      <Skills />
     </Page>
   </>
 )

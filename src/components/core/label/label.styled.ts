@@ -7,6 +7,7 @@ export const LabelContainer = styled.div`
   justify-content: center;
   padding: 0.31rem 0.62rem;
   width: max-content;
+  border-radius: 1rem;
 `
 
 export const LabelText = styled.div`
