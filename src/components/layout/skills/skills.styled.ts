@@ -5,6 +5,10 @@ export const SkillsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 9rem 0;
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    margin: 5rem 0;
+  }
 `
 export const Icons = styled.div`
   display: flex;
