@@ -12,6 +12,8 @@ export const HeroContainer = styled.div`
 `
 
 export const ImageBox = styled.div`
+  flex: 1;
+
   img {
     object-fit: contain;
     max-width: 100%;
@@ -23,12 +25,14 @@ export const ImageBox = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    flex: initial;
   }
 `
 
 export const DownloadBox = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1;
 
   @media ${({ theme }) => theme.media.maxSmallDesktop} {
     order: 3;
@@ -38,18 +42,21 @@ export const DownloadBox = styled.div`
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    flex: initial;
   }
 `
 
 export const HeroContentBox = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1;
 
   @media ${({ theme }) => theme.media.maxSmallDesktop} {
     order: 2;
     width: 100%;
     align-items: center;
     text-align: center;
+    flex: initial;
   }
 `
 

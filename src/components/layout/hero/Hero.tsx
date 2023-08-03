@@ -30,7 +30,9 @@ const PHONE_NUMBER = "+370 698 21 381"
 const HeroBox = ({ t }: { t: TFunction }) => (
   <HeroContentBox>
     <Label>👋 {t("hero.title")}</Label>
-    <Name>Tomas Antanaitis</Name>
+    <Name>
+      Tomas <br /> Antanaitis
+    </Name>
     <Position>{t("hero.subtitle")}</Position>
     <LinkBox>
       <a href={LINKEDIN_URL} target="_blank">
