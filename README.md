@@ -35,5 +35,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Deployment
 
 Project is deployed using Netlify.
-Stage ENV: https://stage.atomas.io
 Production ENV: https://atomas.io
