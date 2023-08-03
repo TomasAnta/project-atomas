@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const HeroContainer = styled.div`
+export const HeroWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
   }
 `
 
-export const ImageBox = styled.div`
+export const ProfileImageContainer = styled.div`
   flex: 1;
 
   img {
@@ -29,7 +29,7 @@ export const ImageBox = styled.div`
   }
 `
 
-export const DownloadBox = styled.div`
+export const DownloadContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -46,7 +46,7 @@ export const DownloadBox = styled.div`
   }
 `
 
-export const HeroContentBox = styled.div`
+export const HeroContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -60,7 +60,7 @@ export const HeroContentBox = styled.div`
   }
 `
 
-export const Name = styled.h2`
+export const FullName = styled.h2`
   font-size: 3.25rem;
   font-style: normal;
   color: ${({ theme }) => theme.colors.primary.textPrimary};
@@ -69,7 +69,7 @@ export const Name = styled.h2`
   line-height: normal;
 `
 
-export const Download = styled.div`
+export const DownloadResume = styled.a`
   font-size: ${({ theme }) => theme.fontSizes.sm};
   color: ${({ theme }) => theme.colors.primary.textHover};
   display: flex;
@@ -79,7 +79,7 @@ export const Download = styled.div`
   cursor: pointer;
 `
 
-export const ContactMe = styled.div`
+export const ContactButton = styled.a`
   display: flex;
   align-items: center;
   border-radius: 1rem;
@@ -90,9 +90,13 @@ export const ContactMe = styled.div`
   margin-left: auto;
   gap: 0.5rem;
   cursor: pointer;
+
+  @media ${({ theme }) => theme.media.maxSmallDesktop} {
+    margin-left: initial;
+  }
 `
 
-export const LinkBox = styled.div`
+export const SocialLinksContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
@@ -100,7 +104,7 @@ export const LinkBox = styled.div`
   cursor: pointer;
 `
 
-export const Position = styled.p`
+export const JobTitle = styled.p`
   color: ${({ theme }) => theme.colors.primary.textSecondary};
   margin: 0;
 `
