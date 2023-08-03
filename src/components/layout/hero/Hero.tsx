@@ -1,21 +1,20 @@
 import { TFunction } from "i18next"
 import Image from "next/image"
-import Link from "next/link"
 import { useTranslation } from "next-i18next"
 
 import { Icon } from "@components/core/icon/Icon"
 import Label from "@components/core/label/Label"
 
 import {
-  ContactMe,
-  Download,
-  DownloadBox,
-  HeroContainer,
-  HeroContentBox,
-  ImageBox,
-  LinkBox,
-  Name,
-  Position,
+  ContactButton,
+  DownloadContainer,
+  DownloadResume,
+  FullName,
+  HeroContentContainer,
+  HeroWrapper,
+  JobTitle,
+  ProfileImageContainer,
+  SocialLinksContainer,
 } from "./hero.styled"
 import { Main } from "../page.styled"
 
@@ -27,48 +26,44 @@ const PROFILE_IMAGE_DIMENSIONS = { width: 500, height: 500 }
 
 const PHONE_NUMBER = "+370 698 21 381"
 
-const HeroBox = ({ t }: { t: TFunction }) => (
-  <HeroContentBox>
+const HeroContent = ({ t }: { t: TFunction }) => (
+  <HeroContentContainer>
     <Label>👋 {t("hero.title")}</Label>
-    <Name>
+    <FullName>
       Tomas <br /> Antanaitis
-    </Name>
-    <Position>{t("hero.subtitle")}</Position>
-    <LinkBox>
-      <a href={LINKEDIN_URL} target="_blank">
-        <Icon iconName="linkedIn" rel="noreferrer" />
+    </FullName>
+    <JobTitle>{t("hero.subtitle")}</JobTitle>
+    <SocialLinksContainer>
+      <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
+        <Icon iconName="linkedIn" />
       </a>
-      <a href={GITHUB_URL} target="_blank" rel="noreferrer">
+      <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
         <Icon iconName="gitHub" />
       </a>
-    </LinkBox>
-  </HeroContentBox>
+    </SocialLinksContainer>
+  </HeroContentContainer>
 )
 
 const ProfileImage = () => (
-  <ImageBox>
+  <ProfileImageContainer>
     <Image
       priority
       src={PROFILE_IMAGE_PATH}
       alt="Illustration of the author"
       {...PROFILE_IMAGE_DIMENSIONS}
     />
-  </ImageBox>
+  </ProfileImageContainer>
 )
 
-const DownloadAndContactBox = ({ t }: { t: TFunction }) => (
-  <DownloadBox>
-    <a href={RESUME_PATH} download>
-      <Download>
-        {t("hero.downloadResume")} <Icon iconName="arrowDown" />
-      </Download>
-    </a>
-    <Link href={`tel:${PHONE_NUMBER}`}>
-      <ContactMe>
-        <Icon iconName="phone" /> {t("hero.letsTalk")}
-      </ContactMe>
-    </Link>
-  </DownloadBox>
+const DownloadAndContactContainer = ({ t }: { t: TFunction }) => (
+  <DownloadContainer>
+    <DownloadResume href={RESUME_PATH} download>
+      {t("hero.downloadResume")} <Icon iconName="arrowDown" />
+    </DownloadResume>
+    <ContactButton href={`tel:${PHONE_NUMBER}`}>
+      <Icon iconName="phone" /> {t("hero.letsTalk")}
+    </ContactButton>
+  </DownloadContainer>
 )
 
 const Hero = () => {
@@ -76,11 +71,11 @@ const Hero = () => {
 
   return (
     <Main>
-      <HeroContainer>
-        <HeroBox t={t} />
+      <HeroWrapper>
+        <HeroContent t={t} />
         <ProfileImage />
-        <DownloadAndContactBox t={t} />
-      </HeroContainer>
+        <DownloadAndContactContainer t={t} />
+      </HeroWrapper>
     </Main>
   )
 }
