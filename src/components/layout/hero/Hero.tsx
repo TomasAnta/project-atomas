@@ -18,12 +18,11 @@ import {
 } from "./hero.styled"
 import { Main } from "../page.styled"
 
-const RESUME_PATH = "/resume.pdf"
+const RESUME_PATH = "/tomas-antanaitis.pdf"
 const LINKEDIN_URL = "https://www.linkedin.com/in/antanaitis-tomas"
 const GITHUB_URL = "https://github.com/TomasAnt"
 const PROFILE_IMAGE_PATH = "/images/profile-image.png"
 const PROFILE_IMAGE_DIMENSIONS = { width: 500, height: 500 }
-
 const PHONE_NUMBER = "+370 698 21 381"
 
 const HeroContent = ({ t }: { t: TFunction }) => (
