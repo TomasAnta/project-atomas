@@ -18,7 +18,7 @@ import {
 } from "./hero.styled"
 import { Main } from "../page.styled"
 
-const RESUME_PATH = "/tomas-antanaitis.pdf"
+const RESUME_PATH = "/resume.pdf"
 const LINKEDIN_URL = "https://www.linkedin.com/in/antanaitis-tomas"
 const GITHUB_URL = "https://github.com/TomasAnt"
 const PROFILE_IMAGE_PATH = "/images/profile-image.png"
