@@ -69,16 +69,6 @@ export const FullName = styled.h2`
   line-height: normal;
 `
 
-export const DownloadResume = styled.a`
-  font-size: ${({ theme }) => theme.fontSizes.sm};
-  color: ${({ theme }) => theme.colors.primary.textHover};
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem 0;
-  gap: 0.5rem;
-  cursor: pointer;
-`
-
 export const ContactButton = styled.a`
   display: flex;
   align-items: center;
