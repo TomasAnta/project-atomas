@@ -8,7 +8,6 @@ import Label from "@components/core/label/Label"
 import {
   ContactButton,
   DownloadContainer,
-  DownloadResume,
   FullName,
   HeroContentContainer,
   HeroWrapper,
@@ -18,7 +17,6 @@ import {
 } from "./hero.styled"
 import { Main } from "../page.styled"
 
-const RESUME_PATH = "/resume.pdf"
 const LINKEDIN_URL = "https://www.linkedin.com/in/antanaitis-tomas"
 const GITHUB_URL = "https://github.com/TomasAnt"
 const PROFILE_IMAGE_PATH = "/images/profile-image.png"
@@ -56,9 +54,6 @@ const ProfileImage = () => (
 
 const DownloadAndContactContainer = ({ t }: { t: TFunction }) => (
   <DownloadContainer>
-    <DownloadResume href={RESUME_PATH} download>
-      {t("hero.downloadResume")} <Icon iconName="arrowDown" />
-    </DownloadResume>
     <ContactButton href={`tel:${PHONE_NUMBER}`}>
       <Icon iconName="phone" /> {t("hero.letsTalk")}
     </ContactButton>
